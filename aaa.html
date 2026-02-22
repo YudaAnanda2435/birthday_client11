@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -145,7 +145,7 @@
     <!-- PAGE 1 -->
     <div class="page active" id="page1">
       <img src="1a.gif" alt="Cute Icon" />
-      <h1>haiii al sayanggg! 🩷</h1>
+      <h1>haiii sayanggg! 🩷</h1>
       <button class="button" onclick="goToPage('page2')">tap disinii ‹𝟹</button>
     </div>
 
@@ -195,7 +195,11 @@
     </div>
 
     <!-- PAGE 5 -->
-    <div class="page" id="page5" style="font-family: 'Montserrat', sans-serif">
+    <div
+      class="page"
+      id="page5"
+      style="font-family: &quot;Montserrat&quot;, sans-serif"
+    >
       <div style="text-align: center; margin-top: 15px">
         <img
           src="5.gif"
@@ -215,14 +219,31 @@
     <audio id="bg-music" src="amin.mp3" autoplay loop muted></audio>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script>
-      const fullLetter = `selamat ulang tahun, Al cintaku.
-hari ini semesta terasa lebih terang, seolah langit menyalakan jutaan bintang hanya untuk merayakan hadirnya kamu di dunia. setiap hembusan angin membawa doa, agar setiap langkahmu penuh cahaya dan setiap mimpi yang kau jaga diam-diam menemukan jalannya menjadi nyata.
-
-terimakasih kasih, sayang, sudah menjadi detak yang menenangkan di tengah hiruk pikuk hari-hariku. kamu adalah tawa di antara gelisah, pelukan di antara badai, dan rumah yang selalu kurindu bahkan ketika aku di sisimu.
-
-semoga waktu terus menaburkan keberanian di hatimu, rejeki yang lapang, dan perjalanan yang selalu menuntunmu pada kebahagiaan sejati. mari kita menulis bab-bab baru, merangkai kenangan, dan tetap memelihara cinta yang tak lekang meski usia bertambah.
-
-selamat terlahir kembali, Al sayangku—hari ini dan seterusnya, semoga langit selalu berpihak pada segala doamu. 💕
+      const fullLetter = `  HAPPY BIRTHDAY, LOVE! 
+      Happy birthdayyy happyyy birthday happy birthday yeayyyyyy!
+      Happy birthday gantengkuu Arya Kusuma Dinatta, pacarku yang
+      sekarang udah genap 20 tahun! It’s your special day, wish you
+      all the best, sayang. 
+      Tia harap di umur baru ini kamu makin bahagia, makin sukses,
+      dan makin sayang sama Tia harus iniii ya njer!!Tia harap di
+      umur baru ini kamu bisa semakin bahagia, jadi pribadi yang
+      lebih baik dari tahun-tahun sebelumnya. Apa pun yang kamu
+      impikan, semoga perlahan-lahan satu per satu tercapai. May all
+      your dreams come true, one step at a time. Semoga rezekimu
+      dilancarkan, langkahmu dimudahkan, dan hatimu selalu tenang
+      dalam setiap hal yang kamu jalani.
+      Kamu keren banget, sayang. Kamu bisa ngelewatin semua hal yang
+      mungkin dulu terasa berat tapi lihat sekarang, kamu udah
+      sejauh ini, kamu udah tumbuh, kamu udah jadi pribadi yang
+      makin kuat. I’m so proud of you, truly.
+      Terima kasih udah tetap jadi kamu yang sabar, yang tulus, yang
+      selalu bikin Tia ngerasa cukup cuma dengan kehadiranmu. Thank
+      you for being you the one who makes everything feel right.
+      Semoga tahun ini banyak hal baik datang buat kamu, dan semoga
+      Tia bisa terus nemenin kamu di setiap langkahnya.
+      Once again, happy birthday my love! You deserve the world, and
+      I’ll always be here cheering for you.
+      SEKALI LAGIII SELAMAT ULANG TAHUN PACAR AKU!!!
 `;
 
       function goToPage(pageId) {
@@ -237,7 +258,7 @@ selamat terlahir kembali, Al sayangku—hari ini dan seterusnya, semoga langit s
           music.play().catch((e) => console.log("Autoplay blocked:", e));
 
           confetti({ particleCount: 150, spread: 100, origin: { y: 0.6 } });
-          typeText(fullLetter, document.getElementById("letterText"), 25);
+          typeText(fullLetter, document.getElementById("letterText"), 45);
           startFallingSymbols();
         }
       }
